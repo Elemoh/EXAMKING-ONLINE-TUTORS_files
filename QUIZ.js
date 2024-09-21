@@ -150,7 +150,7 @@ function submitQuiz() {
     document.getElementById('score').innerText = `${score} out of ${questions.length}`;
 
     // Create WhatsApp link
-    const whatsappNumber = "YOUR_ADMIN_WHATSAPP_NUMBER"; // Replace with the admin's WhatsApp number
+    const whatsappNumber = "2348161581089"; // Replace with the admin's WhatsApp number
     const whatsappMessage = encodeURIComponent(scoreMessage);
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`;
 
