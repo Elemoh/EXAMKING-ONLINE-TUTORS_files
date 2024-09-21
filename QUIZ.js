@@ -1,5 +1,5 @@
 let timer;
-let timeLeft = 120; // 2 minutes
+let timeLeft = 100; // 2 minutes
 let currentQuestion = 0;
 const questions = [
     {
@@ -157,5 +157,5 @@ function submitQuiz() {
     // Redirect to WhatsApp after a short delay
     setTimeout(() => {
         window.open(whatsappUrl, '_blank');
-    }, 1000); // Redirect after 2 seconds
+    }, 2000); // Redirect after 2 seconds
 }
