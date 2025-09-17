@@ -21,17 +21,48 @@
 
   <main class="container content">
     <article>
-      <h2>Our Terms</h2>
-      <p>By using this website, you agree to the following terms and conditions.</p>
+      <h2>Please Read Carefully</h2>
+      <p>Our Terms & Conditions are provided below. To continue using our services, you must accept them.</p>
 
-      <h3>Use of Service</h3>
-      <p>You agree to use this site only for lawful purposes and not to misuse the content provided.</p>
+      <div class="scroll-box">
+        <h3>1. Introduction</h3>
+        <p>By accessing or using <b>Mr. Surest Official</b>, you agree to be bound by these Terms & Conditions.</p>
 
-      <h3>Limitation of Liability</h3>
-      <p>We are not responsible for damages resulting from use or inability to use our services.</p>
+        <h3>2. Eligibility</h3>
+        <p>You must be at least 18 years old to use our services.</p>
 
-      <h3>Changes to Terms</h3>
-      <p>We may update these terms at any time. Continued use of our site means you accept the updated terms.</p>
+        <h3>3. User Responsibilities</h3>
+        <ul>
+          <li>Provide accurate and truthful information.</li>
+          <li>Do not use this site for illegal or harmful purposes.</li>
+          <li>Respect the intellectual property rights of others.</li>
+        </ul>
+
+        <h3>4. Prohibited Activities</h3>
+        <p>You agree not to hack, disrupt, copy, or misuse this website.</p>
+
+        <h3>5. Intellectual Property</h3>
+        <p>All content belongs to <b>Mr. Surest Official</b>. Unauthorized reproduction is prohibited.</p>
+
+        <h3>6. Limitation of Liability</h3>
+        <p>We provide services “as is” and are not liable for damages or losses from use.</p>
+
+        <h3>7. Termination</h3>
+        <p>We may suspend or terminate your access if you violate these Terms.</p>
+
+        <h3>8. Governing Law</h3>
+        <p>These Terms are governed by Nigerian law.</p>
+
+        <h3>9. Updates</h3>
+        <p>We may update these Terms anytime. Continued use = acceptance.</p>
+      </div>
+
+      <p class="accept-box">
+        <input type="checkbox" id="accept" />
+        <label for="accept"> I have read and agree to the Terms & Conditions </label>
+      </p>
+
+      <button id="continueBtn" disabled>Continue</button>
     </article>
   </main>
 
@@ -40,5 +71,21 @@
       <p>&copy; 2025 Mr. Surest (Obinna Daniel). All Rights Reserved.</p>
     </div>
   </footer>
+
+  <script>
+    const checkbox = document.getElementById("accept");
+    const btn = document.getElementById("continueBtn");
+
+    checkbox.addEventListener("change", function() {
+      btn.disabled = !this.checked;
+    });
+
+    btn.addEventListener("click", function() {
+      if (checkbox.checked) {
+        alert("✅ Thank you! You have accepted the Terms & Conditions.");
+        window.location.href = "index.html"; 
+      }
+    });
+  </script>
 </body>
 </html>
